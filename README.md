@@ -47,16 +47,6 @@ while True:
 ![image](https://github.com/user-attachments/assets/69ec5b34-175e-4371-a1a7-85dce24d0a05)
 
 ## PROGRAM - RARP
-## SERVER
-```
-import socket
-s=socket.socket()
-s.connect(('localhost',9000))
-while True:
- ip=input("Enter MAC Address : ")
- s.send(ip.encode())
- print("Logical Address",s.recv(1024).decode()) 
-```
 ## CLIENT
 ```
 import socket
